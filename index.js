@@ -32,6 +32,9 @@ function runQuiz() {
         if(userAnswer === questionsArr[i].answer) {
             correctAnswers++;
         }
+        else {
+            alert('Incorrect');
+        }
     }
 
     var percentage = Math.round((correctAnswers / questionsArr.length) * 100);
