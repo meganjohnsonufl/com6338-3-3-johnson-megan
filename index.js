@@ -2,27 +2,27 @@ var questionsArr = [
     {
     question: 'JavaScript is the best language',
     answer: true
-    }
+    },
 
     {
     question: 'Javascript is the same as HTML',
     answer: false
-    }
+    },
 
     {
-    question: 'CSS is primary used for styling in web development',
+    question: 'CSS is primarily used for styling in web development',
     answer: true
-    }
+    },
 
     {
     question: 'JavaScript was invented in 1995',
     answer: true
-    }
+    },
 
     {
     question: 'JavaScript was invented by Bill Gates',
     answer: false
-    }
+    },
 ]
 
 function runQuiz() {
