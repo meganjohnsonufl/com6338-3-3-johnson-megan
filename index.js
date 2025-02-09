@@ -1,37 +1,37 @@
-// Your code here
- function runQuiz() {
-    
-    var questionsArr = [
-        {
-        question: 'JavaScript is the best language',
-        answer: true
-        }
+var questionsArr = [
+    {
+    question: 'JavaScript is the best language',
+    answer: true
+    }
 
-        {
-        question: 'Javascript is the same as HTML',
-        answer: false
-        }
+    {
+    question: 'Javascript is the same as HTML',
+    answer: false
+    }
 
-        {
-        question: 'CSS is primary used for styling in web development',
-        answer: true
-        }
+    {
+    question: 'CSS is primary used for styling in web development',
+    answer: true
+    }
 
-        {
-        question: 'JavaScript was invented in 1995',
-        answer: true
-        }
+    {
+    question: 'JavaScript was invented in 1995',
+    answer: true
+    }
 
-        {
-        question: 'JavaScript was invented by Bill Gates',
-        answer: false
-        }
-    ]
+    {
+    question: 'JavaScript was invented by Bill Gates',
+    answer: false
+    }
+]
 
+function runQuiz() {
     var correctAnswers = 0;
     for(var i = 0; i < questionsArr.length; i++) {
-        var userAnswer = confirm(questionsArr[i]);
-        if(userAnswer === questionsArr[i].question)
+        var userAnswer = confirm(questionsArr[i].question);
+        if(userAnswer === questionsArr[i].answer) {
+            correctAnswers++;
+        }
     }
 
     var percentage = Math.round((correctAnswers / questionsArr.length) * 100);
